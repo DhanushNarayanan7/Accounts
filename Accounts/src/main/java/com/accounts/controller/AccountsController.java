@@ -40,6 +40,11 @@ public class AccountsController {
 
 	private IAccountService iaccountService;
 
+	@GetMapping("/dummy")
+	public String dummyGet(){
+		return "Hello World";
+	}
+
 	
 	@Operation(
             summary = "Create Account REST API",
